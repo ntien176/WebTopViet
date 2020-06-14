@@ -17,6 +17,7 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.4;
+    margin: 2px;
 }
 a {
     color: var(--dark-color);
@@ -36,6 +37,7 @@ header {
     top: 0;
     left: 0; 
     right: 0;
+    margin: 2px;
 }
 #header {
     display: flex;
@@ -43,6 +45,8 @@ header {
     justify-content: space-between;
     height: 70px;
     padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Nav bar */
@@ -58,7 +62,7 @@ header {
     animation-name: collaps;
     animation-duration: 1s;
 }
-nav input, label {
+nav input {
     display: none;
 }
 .showNav {

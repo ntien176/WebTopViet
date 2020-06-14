@@ -1,9 +1,9 @@
 /* Menu button */
-input#check {
+.menu-label {
     display: none;
 }
 .menu-btn {
-    margin: auto;
+    margin: 0 10px;
     width: 30px;
     height: 30px;
     /* border: 2px solid #FFF; */

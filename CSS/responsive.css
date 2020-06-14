@@ -6,7 +6,9 @@
     display: block;
     font-size: 1.3rem;
   }
-
+  .menu-button {
+    display: none !important;
+  }
   /* Sub menu */
   .nav-list-item {
     position: relative;
@@ -17,18 +19,7 @@
     box-shadow: 0 0px 2px rgb(83, 83, 83);
     min-width: 190px;
   }
-  /* .sub-menu::before {
-    position: absolute;
-    content: '';
-    top: -20px;
-    left: 5px;
-    outline: #333333;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #FFF;
-    border-left: 10px solid transparent;
-    width: 0; height:0;
-} */
+
 
   .sub-menu .nav-list__item-link {
     background-color: #ffffff;
@@ -42,10 +33,13 @@
 }
 @media screen and (max-width: 1200px) {
   #header {
-    width: 920px;
+    width: 100%;
   }
   .nav-list {
     display: none;
+    max-height: 400px;
+    overflow-y:auto;
+    overflow-x: hidden;
   }
 
   .nav-list__res {
@@ -69,7 +63,7 @@
   .nav-list-item {
     display: flex;
     flex-wrap: wrap;
-    height: 40px;
+    height: auto;
     font-size: 1.5rem;
     border-bottom: 1px solid #ddd;
     padding: 0;
@@ -77,39 +71,47 @@
     line-height: 40px;
     /* justify-content: space-between; */
   }
-
+  .logo-brand {
+    flex-shrink: 1;
+  }
   .menu-label {
-    display: block;
+    display: block !important;
   }
   .nav-list__item-link {
     display: block;
     padding: 0;
-    margin: auto 10px;
+    margin-left: 10px;
     width: 100%;
     flex-basis: 80%;
+    flex-grow: 1;
+    border-right: 1px solid #dddddd;
     /* transform: translateY(15%); */
   }
   .arrow-down {
     display: block;
-    /* margin-right: 20px; */
-    border-left: 1px solid #ddd;
+    padding: 10px;
     width: 40px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 15%;
+    flex-basis: 10%;
     /* margin: 0 auto; */
   }
   .sub-menu {
-      display: none;
-      flex-basis: 100%;
-
+    display: none;
+    flex-basis: 100%;
+    background-color: #FFFFFF;
+  }
+  .sub-list-item {
+    border-top: 1px solid #dddddd;
+    padding-left: 20px;
   }
   .nav-list-item {
     display: block;
   }
   .openSubMenu {
     display: block;
-}
+    /* position: static; */
+  }
 }
