@@ -1,0 +1,112 @@
+@media screen and (min-width: 1200px) {
+  .nav-list-item:hover .sub-menu {
+    position: absolute;
+    top: 46px;
+    left: 10px;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  /* Sub menu */
+  .nav-list-item {
+    position: relative;
+  }
+  .sub-menu {
+    display: none;
+    /* border: .7px solid rgb(200, 200, 200); */
+    box-shadow: 0 0px 2px rgb(83, 83, 83);
+    min-width: 190px;
+  }
+  /* .sub-menu::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 5px;
+    outline: #333333;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    border-left: 10px solid transparent;
+    width: 0; height:0;
+} */
+
+  .sub-menu .nav-list__item-link {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 0.5px solid #dddddd;
+    color: rgb(97, 97, 97);
+  }
+  .sub-menu .nav-list__item-link:hover {
+    color: var(--primary-color);
+  }
+}
+@media screen and (max-width: 1200px) {
+  #header {
+    width: 920px;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list__res {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 1.8rem;
+    border: 0.5px solid #ddd;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav-list__res .nav-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-list-item {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    /* justify-content: space-between; */
+  }
+  .nav-list-item:hover {
+  }
+  .menu-label {
+    display: block;
+  }
+  .nav-list__item-link {
+    display: block;
+    padding: 0;
+    margin: auto 10px;
+    width: 100%;
+    flex-basis: 200px;
+    /* transform: translateY(15%); */
+  }
+  .arrow-down {
+    display: block;
+    /* margin-right: 20px; */
+    border-left: 1px solid #ddd;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100px;
+    /* margin: 0 auto; */
+  }
+  .sub-menu {
+      display: none;
+      flex-basis: 100%;
+  }
+  .nav-list-item {
+    display: block;
+  }
+}
